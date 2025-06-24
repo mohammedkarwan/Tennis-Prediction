@@ -43,3 +43,9 @@ To develop an intelligent betting assistant that uses a trained machine learning
 
 ## ✅ Sample Output
 
+📅 High-Value Upcoming Matches:
+🗓 2025-06-25 | Novak Djokovic vs Carlos Alcaraz
+🎯 Prediction: Novak Djokovic to win match
+📈 Prob: 71.24% | EV: 22.37% | Odds: 1.85
+
+
