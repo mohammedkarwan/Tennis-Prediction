@@ -48,10 +48,21 @@ To develop an intelligent betting assistant that uses a trained machine learning
 🎯 Prediction: Novak Djokovic to win match
 📈 Prob: 71.24% | EV: 22.37% | Odds: 1.85
 
+---
 
-🎯 All high-value match predictions are saved to a CSV file:  
-`/content/drive/MyDrive/sav/high_value_upcoming_bets.csv`  
-(Accessible if using Google Colab + Google Drive integration)
+## 🚀 How to Run
 
+1. Upload your trained model file: Tennis-Prediction.joblib
+
+2. Set your API key from api-tennis.com
+
+3. Run the script in a Google Colab or local environment
+
+4. Check the console for high-value predictions and download the CSV file
+
+---
+## 📊 Outcome
+
+The project effectively detects profitable betting opportunities in real time, showing the power of machine learning in sports analytics
 
 
