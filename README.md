@@ -49,3 +49,9 @@ To develop an intelligent betting assistant that uses a trained machine learning
 📈 Prob: 71.24% | EV: 22.37% | Odds: 1.85
 
 
+🎯 All high-value match predictions are saved to a CSV file:  
+`/content/drive/MyDrive/sav/high_value_upcoming_bets.csv`  
+(Accessible if using Google Colab + Google Drive integration)
+
+
+
