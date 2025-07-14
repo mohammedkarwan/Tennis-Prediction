@@ -45,16 +45,16 @@ The system is designed to run automatically once per day (or as configured), ens
 
 ## 📂 Project Structure
 
-├── config.py # Configuration (API key, model paths, filter thresholds)
-├── main_runner.py # Main entry point, coordinates all modules
-├── api_fetcher.py # Fetches data from api-tennis.com
-├── model_predictor.py # Model loading/training, preprocessing, prediction, filtering
-├── google_sheets_manager.py # Google Sheets read/write functionality
-├── backtesting_logic.py # Backtesting logic and performance calculations
-├── state_manager.py # Manages system state (e.g., last run/train date)
-├── best_tennis_model.pkl # (Generated) Trained model file
-├── scaler.pkl # (Generated) Scaler used in preprocessing
-└── darkechate-026c305d6750.json # Google Cloud Service Account credentials
+── config.py # Configuration (API key, model paths, filter thresholds)
+── main_runner.py # Main entry point, coordinates all modules
+── api_fetcher.py # Fetches data from api-tennis.com
+── model_predictor.py # Model loading/training, preprocessing, prediction, filtering
+── google_sheets_manager.py # Google Sheets read/write functionality
+── backtesting_logic.py # Backtesting logic and performance calculations
+── state_manager.py # Manages system state (e.g., last run/train date)
+── best_tennis_model.pkl # (Generated) Trained model file
+── scaler.pkl # (Generated) Scaler used in preprocessing
+── darkechate-026c305d6750.json # Google Cloud Service Account credentials
 
 ---
 
@@ -78,33 +78,34 @@ Ensure Python 3.8+ is installed. Then install dependencies:
 pip install pandas pytz requests scikit-learn pygsheets
 2. Google Sheets API Setup
 Create a Google Cloud Project:
-Visit Google Cloud Console
 
-Create a new project or select an existing one
+-Visit Google Cloud Console
+
+-Create a new project or select an existing one
 
 Enable APIs:
-Go to APIs & Services > Enabled APIs & Services
+-Go to APIs & Services > Enabled APIs & Services
 
-Enable both Google Sheets API and Google Drive API
+-Enable both Google Sheets API and Google Drive API
 
 Create a Service Account:
-Navigate to IAM & Admin > Service Accounts
+-Navigate to IAM & Admin > Service Accounts
 
-Click Create Service Account, name it, then click Done
+-Click Create Service Account, name it, then click Done
 
-Click on the service account email, go to Keys > Add Key > Create new key > JSON
+-Click on the service account email, go to Keys > Add Key > Create new key > JSON
 
-A JSON file will download (e.g., darkechate-026c305d6750.json). Keep it safe.
+-A JSON file will download (e.g., darkechate-026c305d6750.json). Keep it safe.
 
 Share Google Sheet:
-Open the target Google Sheet
+-Open the target Google Sheet
 
-Click Share
+-Click Share
 
-Paste the service account email (ends with @developer.gserviceaccount.com)
+-Paste the service account email (ends with @developer.gserviceaccount.com)
 
-Grant Editor access and click Share
-
+-Grant Editor access and click Share
+---
 3. Configure config.py
 Create a config.py file in your project folder with the following:
 
@@ -124,13 +125,16 @@ BET_AMOUNT = 10.0
 MIN_MODEL_PROBABILITY = 0.60
 MIN_MODEL_EXPECTED_VALUE = 0.05
 MIN_PROBABILITY_DIFFERENCE = 0.03
+---
 4. Place Google Credentials File
 Move the downloaded darkechate-026c305d6750.json into the main project folder.
+---
 
 5. Run the System
 From the command line, navigate to your project folder and run:
 
 python main_runner.py
+---
 6. Automate with a Scheduler (Recommended)
 On Windows:
 Use Task Scheduler:
@@ -145,7 +149,7 @@ Arguments: full path to main_runner.py
 
 Start in: folder path of your project
 
-------
+---
 📈 Key Performance Indicators (KPIs)
 The system tracks and updates the following metrics in System Performance:
 
